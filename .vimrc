@@ -15,6 +15,7 @@ filetype on
 filetype plugin on
 filetype plugin indent on
 set nu 
+set tabstop=4
 set ruler 
 set title
 " y and d put stuff into system clipboard (so that other apps can see it)
