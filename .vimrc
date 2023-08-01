@@ -18,6 +18,7 @@ set nu
 set tabstop=4
 set ruler 
 set title
+set paste
 " y and d put stuff into system clipboard (so that other apps can see it)
 set clipboard=unnamed,unnamedplus    
 
