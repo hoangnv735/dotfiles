@@ -12,8 +12,8 @@ M.general = {
     ["N"] = {"Nzzzv", "Find previous and center"},
   },
   v = {
-    ["J"] = {":m '>+1<CR>gv=gv", "Move Up"},
-    ["K"] = {":m '<-2<CR>gv=gv", "Move Down"}
+    ["J"] = {":m '>+1<CR>gv=gv", "Swap Down"},
+    ["K"] = {":m '<-2<CR>gv=gv", "Swap Up"}
   },
   i = {
     ["C-c"] = {"Esc", "Escape"},
