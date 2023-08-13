@@ -5,11 +5,22 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
-    -- opts = {
-      -- ensure_installed = {
-      --   "pyright",
-      -- },
-     -- },
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "pyright",
+        "black",
+        "ruff",
+        "stylua",
+      },
+     },
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = {"python"},
+    opts = function()
+      return require "custom.configs.null-ls"
+    end,
   },
   {
     "neovim/nvim-lspconfig",
