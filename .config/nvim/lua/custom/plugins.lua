@@ -29,5 +29,12 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
+  {
+    "nvimdev/lspsaga.nvim",
+    event = "LspAttach",
+    config = function()
+      require "custom.configs.lspsaga"
+    end,
+  },
 }
 return plugins
