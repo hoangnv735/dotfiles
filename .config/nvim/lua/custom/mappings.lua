@@ -10,8 +10,8 @@ M.general = {
     ["<C-u>"] = {"<C-u>zz", "PageUp and center"},
     ["n"] = {"nzzzv", "Find next and center"},
     ["N"] = {"Nzzzv", "Find previous and center"},
-    ["<A-j>"] = {":m .+1<CR>gv=gv", "Swap Down"},
-    ["<A-k>"] = {":m .-2<CR>gv=gv", "Swap Up"}
+    ["<A-j>"] = {":m .+1<CR>==", "Swap Down"},
+    ["<A-k>"] = {":m .-2<CR>==", "Swap Up"}
   },
   v = {
     ["<A-j>"] = {":m '>+1<CR>gv=gv", "Swap Down"},
