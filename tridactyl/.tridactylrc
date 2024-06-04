@@ -1,12 +1,13 @@
 " General Settings
 set theme shydactyl
-set searchurls.yt https://www.youtube.com/results?search_query=
+set searchurls.y https://www.youtube.com/results?search_query=
 set searchurls.g https://www.google.com/search?q=
-set searchurls.gi https://www.google.com/search?tbm=ischq=
+set searchurls.gi https://www.google.com/search?q=%s&udm=2
 set searchurls.m https://www.google.com/maps/search/%s
 set searchurls.gl https://www.google.com/search?btnI=I'm+Feeling+Lucky&q=k
 set searchurls.s https://scholar.google.com/scholar?q=
 set searchurls.d https://duckduckgo.com/?q=
+set searchurls.di https://duckduckgo.com/?q=%s&iax=images&ia=images
 set searchurls.t https://twitter.com/search?q=
 set searchurls.w https://en.wikipedia.org/wiki/Special:Search/
 set searchurls.gh https://github.com/search?utf8=✓&q=
@@ -18,9 +19,12 @@ bind --mode=visual N findnext -1
 bind / fillcmdline find
 bind ? fillcmdline find -?
 bind yu clipboard yanktitle
+bind K tabprev
+bind J tabnext
 
 unbind --mode=ex <C-a>
 unbind --mode=ex <C-c>
 
 " Autocmds
-
+command src source ~/.tridactylrc
+command nrc nvim ~/.tridactylrc
