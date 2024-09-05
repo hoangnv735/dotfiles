@@ -25,7 +25,22 @@ local default_plugins = {
     end,
     config = function(_, opts)
       require "base46.term"
-      require("nvterm").setup(opts)
+      require("nvterm").setup(
+        {
+          terminals = {
+          type_opts = {
+            float = {
+              relative = 'editor',
+              row = 0.2,
+              col = 0.15,
+              width = 0.7,
+              height = 0.6,
+              border = "single",
+              },
+            }
+          },
+        }
+      )
     end,
   },
 
