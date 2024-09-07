@@ -24,6 +24,6 @@ M.term = {
     border = "single",
   }
 }
-M.mason = { cmd = true, pkgs = {} }
+M.mason = { cmd = true, pkgs = {"ruff", "python-lsp-server", "lua-language-server"} }
 
 return M
