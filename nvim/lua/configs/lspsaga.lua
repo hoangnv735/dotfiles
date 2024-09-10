@@ -8,6 +8,7 @@ lspsaga.setup{
     show_file = true,
     folder_level = 1,
     color_mode = true,
+    respect_root = true,
   },
   code_action = {
     num_shortcut = true,
