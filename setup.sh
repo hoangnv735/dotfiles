@@ -19,6 +19,7 @@ home_dir=(
 
 config_dir=(
   nvim
+  kitty
   )
 
 echo "HOME=$HOME"
