@@ -18,7 +18,7 @@ bind --mode=visual n findnext 1
 bind --mode=visual N findnext -1
 bind / fillcmdline find
 bind ? fillcmdline find -?
-bind yu clipboard yanktitle
+bind yu tabduplicate 
 bind K tabprev
 bind J tabnext
 
