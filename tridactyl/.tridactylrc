@@ -13,6 +13,12 @@ set searchurls.w https://en.wikipedia.org/wiki/Special:Search/
 set searchurls.gh https://github.com/search?utf8=✓&q=
 set searchurls.o https://www.openstreetmap.org/search?query=
 
+# Disable tridactyl on M$ products
+seturl teams.microsoft.com superignore true
+seturl teams.live.com superignore true
+seturl outlook.office.com superignore true
+seturl skype.com superignore true
+
 " Binds
 bind --mode=visual n findnext 1
 bind --mode=visual N findnext -1
