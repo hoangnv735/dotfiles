@@ -18,10 +18,13 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages = 
         [ 
+          pkgs.cargo
+          pkgs.mdbook
           pkgs.htop
           pkgs.keepassxc
           pkgs.kitty
           pkgs.neovim
+          pkgs.nodejs_20
           pkgs.mkalias
           pkgs.nnn
           pkgs.obsidian
